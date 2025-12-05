@@ -23,31 +23,31 @@ python manage.py runserver<br><br>
 # API Endpoints
 
 ## API #1 — Blog Views
-{{base_url}}/analytics/blog-views/?object_type=user<br>
-{{base_url}}/analytics/blog-views/?object_type=user&range=month<br>
-{{base_url}}/analytics/blog-views/?object_type=user&user=charlie<br>
-{{base_url}}/analytics/blog-views/?object_type=user&user=alice&range=week<br>
-{{base_url}}/analytics/blog-views/?object_type=country<br>
-{{base_url}}/analytics/blog-views/?object_type=country&range=year<br>
-{{base_url}}/analytics/blog-views/?object_type=country&country=USA<br>
-{{base_url}}/analytics/blog-views/?object_type=country&country=India&range=month<br>
+GET   /analytics/blog-views/?object_type=user<br>
+GET   /analytics/blog-views/?object_type=user&range=month<br>
+GET   /analytics/blog-views/?object_type=user&user=charlie<br>
+GET   /analytics/blog-views/?object_type=user&user=alice&range=week<br>
+GET   /analytics/blog-views/?object_type=country<br>
+GET   /analytics/blog-views/?object_type=country&range=year<br>
+GET   /analytics/blog-views/?object_type=country&country=USA<br>
+GET   /analytics/blog-views/?object_type=country&country=India&range=month<br>
 
 ## API #2 — Top
-{{base_url}}/analytics/top/?top=blog<br>
-{{base_url}}/analytics/top/?top=country<br>
-{{base_url}}/analytics/top/?top=blog<br>
-{{base_url}}/analytics/top/?top=blog&range=month<br>
-{{base_url}}/analytics/top/?top=blog&user=john<br>
-{{base_url}}/analytics/top/?top=user&country=Finland<br>
+GET   /analytics/top/?top=blog<br>
+GET   /analytics/top/?top=country<br>
+GET   /analytics/top/?top=blog<br>
+GET   /analytics/top/?top=blog&range=month<br>
+GET   /analytics/top/?top=blog&user=john<br>
+GET   /analytics/top/?top=user&country=Finland<br>
 
 ## API #3 — Performance
-{{base_url}}/analytics/performance/
-{{base_url}}/analytics/performance/?compare=week
-{{base_url}}/analytics/performance/?compare=day
-{{base_url}}/analytics/performance/?compare=year
-{{base_url}}/analytics/performance/?user=john
-{{base_url}}/analytics/performance/?country=India
-{{base_url}}/analytics/performance/?compare=month&user=john&country=USA
+GET   /analytics/performance/<br>
+GET   /analytics/performance/?compare=week<br>
+GET   /analytics/performance/?compare=day<br>
+GET   /analytics/performance/?compare=year<br>
+GET   /analytics/performance/?user=john<br>
+GET   /analytics/performance/?country=India<br>
+GET   /analytics/performance/?compare=month&user=john&country=USA<br>
 
 
 

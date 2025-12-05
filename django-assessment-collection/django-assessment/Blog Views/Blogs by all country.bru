@@ -1,0 +1,20 @@
+meta {
+  name: Blogs by all country
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=country
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: country
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

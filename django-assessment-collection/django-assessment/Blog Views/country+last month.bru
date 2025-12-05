@@ -1,0 +1,22 @@
+meta {
+  name: country+last month
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=country&country=India&range=month
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: country
+  country: India
+  range: month
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

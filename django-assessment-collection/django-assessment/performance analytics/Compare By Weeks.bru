@@ -1,0 +1,20 @@
+meta {
+  name: Compare By Weeks
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/analytics/performance/?compare=week
+  body: none
+  auth: inherit
+}
+
+params:query {
+  compare: week
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

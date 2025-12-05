@@ -1,0 +1,21 @@
+meta {
+  name: Top Users From One Country
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/analytics/top/?top=user&country=Finland
+  body: none
+  auth: inherit
+}
+
+params:query {
+  top: user
+  country: Finland
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Compare Monthly Performance
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/analytics/performance/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

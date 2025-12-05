@@ -1,0 +1,21 @@
+meta {
+  name: Top Blogs — Last 30 Days
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/analytics/top/?top=blog&range=month
+  body: none
+  auth: inherit
+}
+
+params:query {
+  top: blog
+  range: month
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

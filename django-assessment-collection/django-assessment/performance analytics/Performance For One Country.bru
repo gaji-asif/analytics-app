@@ -1,0 +1,20 @@
+meta {
+  name: Performance For One Country
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/analytics/performance/?country=India
+  body: none
+  auth: inherit
+}
+
+params:query {
+  country: India
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

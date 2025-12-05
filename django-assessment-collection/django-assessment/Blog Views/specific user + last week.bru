@@ -1,0 +1,22 @@
+meta {
+  name: specific user + last week
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=user&user=alice&range=week
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: user
+  user: alice
+  range: week
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Monthly Performance for a User from a Country
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base_url}}/analytics/performance/?compare=month&user=john&country=USA
+  body: none
+  auth: inherit
+}
+
+params:query {
+  compare: month
+  user: john
+  country: USA
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

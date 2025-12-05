@@ -1,0 +1,20 @@
+meta {
+  name: Compare By Days
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/analytics/performance/?compare=day
+  body: none
+  auth: inherit
+}
+
+params:query {
+  compare: day
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Top 10 Blogs by Views
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/analytics/top/?top=blog
+  body: none
+  auth: inherit
+}
+
+params:query {
+  top: blog
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

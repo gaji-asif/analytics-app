@@ -1,0 +1,20 @@
+meta {
+  name: Top 10 countries by views
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/analytics/top/?top=country
+  body: none
+  auth: inherit
+}
+
+params:query {
+  top: country
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

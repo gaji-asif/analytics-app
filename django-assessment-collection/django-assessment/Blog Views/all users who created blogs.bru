@@ -1,0 +1,20 @@
+meta {
+  name: all users who created blogs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=user
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: user
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

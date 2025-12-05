@@ -1,0 +1,21 @@
+meta {
+  name: all blogs by specific User
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=user&user=charlie
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: user
+  user: charlie
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

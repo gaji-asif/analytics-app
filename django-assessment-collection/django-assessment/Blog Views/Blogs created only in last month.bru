@@ -1,0 +1,21 @@
+meta {
+  name: Blogs created only in last month
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=user&range=month
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: user
+  range: month
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

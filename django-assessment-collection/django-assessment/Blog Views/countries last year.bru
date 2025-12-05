@@ -1,0 +1,21 @@
+meta {
+  name: countries last year
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/analytics/blog-views/?object_type=country&range=year
+  body: none
+  auth: inherit
+}
+
+params:query {
+  object_type: country
+  range: year
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

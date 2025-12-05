@@ -2,7 +2,7 @@
 
 ## Installation & Setup
 ### 1. Clone the repository
-https://github.com/gaji-asif/analytics-app.git<br>
+git clone https://github.com/gaji-asif/analytics-app.git<br>
 cd analytics-app<br><br>
 
 ### 2. Create Virtual Environment
